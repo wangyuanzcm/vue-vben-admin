@@ -7,7 +7,9 @@
   "author": "",
   "scripts": {
     "build": "nitro build",
-    "start": "nitro dev"
+    "dev": "nitro dev",
+    "start": "nitro dev",
+    "preview": "nitro preview"
   },
   "dependencies": {
     "@faker-js/faker": "catalog:",

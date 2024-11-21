@@ -9,6 +9,7 @@ packages:
   - packages/effects/*
   - packages/business/*
   - apps/*
+  - servers/*
   - scripts/*
   - docs
   - playground
