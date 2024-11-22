@@ -1,3 +1,16 @@
+iboot基于vben和jeecgboot改造而来，使用rsbuild替代了vite，提供了electron/web/h5开发模版，同时提供了基础的系统管理目录，目的是为了更好的支持日常开发业务，统一技术栈。
+
+Rsbuild 与 Vite 有许多相似之处，它们皆致力于提升前端的开发体验。其主要区别在于：
+
+生态兼容性：Rsbuild 兼容大部分的 webpack 插件和所有 Rspack 插件，而 Vite 则是兼容 Rollup 插件。如果你目前更多地使用了 webpack 生态的插件和 loaders，那么迁移到 Rsbuild 是相对容易的。   
+生产一致性：Rsbuild 在开发阶段和生产构建均使用 Rspack 进行打包，因此开发和生产构建的产物具备较强的一致性，这也是 Vite 通过 Rolldown 想要实现的目标之一。   
+模块联邦：Rsbuild 团队与 Module Federation 的开发团队密切合作，并为 Module Federation 提供一流的支持，帮助你开发微前端架构的大型 Web 应用。   
+
+
+vben 5.7.4中使用的技术栈相对是比较新的，使用了pnpm和turbo的一些新特性。并且，它将业务模块与基础框架模块隔离开，这样更方便我们去在不同项目中开发新的业务逻辑而不相互干扰
+
+调试工具增加pagespy，主要用于提供测试日志保存和远程调试功能
+
 <div align="center"> <a href="https://github.com/anncwb/vue-vben-admin"> <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp"> </a> <br> <br>
 
 [![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
